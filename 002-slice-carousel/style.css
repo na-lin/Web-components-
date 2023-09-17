@@ -48,7 +48,7 @@ body {
   right: 0;
 }
 
-.carousel_image .active {
+.carousel_image.active {
   opacity: 0;
   right: 250px;
 }
