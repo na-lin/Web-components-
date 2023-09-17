@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #7f8c8d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .blinds {
+        width: 900px;
+        height: 300px;
+
+        position: relative;
+        top: 200px;
+
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .leaf {
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      .leaf:hover {
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+      img {
+        width: 400px;
+      }
+    </style>
+    <title>Blinds</title>
+  </head>
+  <body>
+    <div class="blinds">
+      <div class="leaf"><img src="1.gif" alt="" /></div>
+      <div class="leaf"><img src="2.gif" alt="" /></div>
+      <div class="leaf"><img src="3.gif" alt="" /></div>
+      <div class="leaf"><img src="4.gif" alt="" /></div>
+      <div class="leaf"><img src="5.gif" alt="" /></div>
+    </div>
+  </body>
+</html>
