@@ -4,6 +4,10 @@ let carousel_images = document.querySelectorAll(".carousel_image");
 let index = 0;
 let time;
 
+function initActiveImage() {
+  active_img.style.backgroundImage = `url('images/1.avif')`;
+}
+
 function resetAllCarouselImages() {
   for (let i = 0; i < carousel_images.length; i++) {
     carousel_images[i].classList = "carousel_image";
@@ -27,6 +31,8 @@ function setTimer() {
     }
   }, 1500);
 }
+
+initActiveImage();
 setTimer();
 for (let i = 0; i < carousel_images.length; i++) {
   carousel_images[i].onmousemove = function () {
