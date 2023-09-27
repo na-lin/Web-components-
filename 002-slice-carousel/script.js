@@ -12,6 +12,9 @@ function resetAllCarouselImages() {
 
 function selectActiveCarouselImage() {
   resetAllCarouselImages();
+  if (index == carousel_images.length) {
+    index = 0;
+  }
   carousel_images[index].classList = "carousel_image active";
 }
 function setTimer() {
@@ -19,7 +22,7 @@ function setTimer() {
     selectActiveCarouselImage();
     index++;
     active_img.style.backgroundImage = `url('images/${index}.avif')`;
-    if (index === carousel_images.length) {
+    if (index >= carousel_images.length) {
       index = 0;
     }
   }, 1500);
